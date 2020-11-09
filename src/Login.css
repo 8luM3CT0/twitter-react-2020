@@ -1,0 +1,84 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twitterIcon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    color: white;
+    font-size: xx-large;
+}
+
+.login__message {
+    color: white;
+}
+
+.login__form {
+    margin-top: 10px;
+    display: flex;
+    background-color: var(--twitter-login-bg) !important;
+    flex-direction: column;
+}
+
+.login__form>span {
+    color: gray;
+    width: 400px;
+    margin: 10px;
+}
+
+.login__input {
+    border: none;
+    font-size: x-large;
+    width: 600px;
+    background-color: var(--twitter-login-bg);
+    border-bottom: 1px solid lightgray;
+    color: var(--twitter-color) !important;
+}
+
+.loginBtn {
+    background-color: var(--twitter-color) !important;
+    text-transform: inherit !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    width: 600px;
+    height: 40px !important;
+    margin-top: 20px !important;
+    font-weight: 800 !important;
+}
+
+.login__register {
+    border: none;
+    margin-top: 18px;
+    margin-right: 20px;
+    background-color: var(--twitter-dark-mode);
+    color: var(--twitter-color);
+}
+
+.footer__one {
+    color: var(--twitter-color);
+    margin-top: 500px;
+}
+
+.footer__two {
+    color: var(--twitter-color);
+    margin-top: 20px;
+}
+
+.footer__three {
+    color: var(--twitter-color);
+    margin-top: 20px;
+}
+
+.footer__last {
+    color: var(--twitter-color);
+    margin-top: 20px;
+}
