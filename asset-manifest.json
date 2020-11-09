@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/twitter-react-2020/static/css/main.06341377.chunk.css",
+    "main.js": "/twitter-react-2020/static/js/main.671d1e91.chunk.js",
+    "main.js.map": "/twitter-react-2020/static/js/main.671d1e91.chunk.js.map",
+    "runtime-main.js": "/twitter-react-2020/static/js/runtime-main.cfcbb16e.js",
+    "runtime-main.js.map": "/twitter-react-2020/static/js/runtime-main.cfcbb16e.js.map",
+    "static/js/2.4c86ea5c.chunk.js": "/twitter-react-2020/static/js/2.4c86ea5c.chunk.js",
+    "static/js/2.4c86ea5c.chunk.js.map": "/twitter-react-2020/static/js/2.4c86ea5c.chunk.js.map",
+    "static/js/3.ec1a090a.chunk.js": "/twitter-react-2020/static/js/3.ec1a090a.chunk.js",
+    "static/js/3.ec1a090a.chunk.js.map": "/twitter-react-2020/static/js/3.ec1a090a.chunk.js.map",
+    "index.html": "/twitter-react-2020/index.html",
+    "static/css/main.06341377.chunk.css.map": "/twitter-react-2020/static/css/main.06341377.chunk.css.map",
+    "static/js/2.4c86ea5c.chunk.js.LICENSE.txt": "/twitter-react-2020/static/js/2.4c86ea5c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfcbb16e.js",
+    "static/js/2.4c86ea5c.chunk.js",
+    "static/css/main.06341377.chunk.css",
+    "static/js/main.671d1e91.chunk.js"
+  ]
+}
