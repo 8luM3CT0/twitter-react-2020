@@ -1,3 +1,7 @@
+This was made with ReactJS (For those who haven't figured that out). 
+For the full deployed site: go here -> https://twitter-react-2020.web.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
