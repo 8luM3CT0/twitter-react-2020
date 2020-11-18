@@ -5,12 +5,13 @@ import Sidebar from './Sidebar';
 import Widgets from './Widgets';
 import {auth} from './firebase';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Login from './Login';
+import Login from './Login'
 import {useStateValue} from './StateProvider';
+
 
 function App() {
 
-  const [{}, dispatch] = useStateValue();
+  const [{user}, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -29,21 +30,24 @@ function App() {
       }
     });
   }, [])
-
+  
   return (
     <div className="app">
         <Router>
-          <Switch>
-          <Route path="/login">
-              <Login />
-            </Route>
+          {!user ? (
+            <Login />
+          ):(
+            <>
+            <Switch>
             <Route path="/">
             <Sidebar />
             <Feed />
             <Widgets />
             </Route>
           </Switch>
-        </Router>
+            </>
+          )}
+          </Router>
         </div>
   );
 }

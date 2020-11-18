@@ -43,6 +43,9 @@ const Post = forwardRef(({
                     <PublishIcon fontSize="small"/>
                  </div>
             </div>
+            {/**Link to login would be here. */}
+            {/**The position is going to be stuck at the bottom, so it'll be sticky. in theory that's how its supposed to */}
+            {/**Ok maybe not here */}
         </div>
         )
     })

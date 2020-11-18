@@ -3,13 +3,16 @@ import './Login.css'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import {Button} from '@material-ui/core'
 import {Link, useHistory} from 'react-router-dom'
-import {auth} from './firebase'
+import {auth, provider} from './firebase'
+import {useStateValue} from './StateProvider'
+import {actionTypes} from './reducer'
 
 function Login() {
 
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [{user}, dispatch] = useStateValue();
 
     const signIn = e => {
         e.preventDefault();
@@ -29,8 +32,19 @@ function Login() {
             history.push('/')
             }
         }).catch(error => alert(error.message))
-    }
 
+        
+    }
+    const signIn2 = e => {
+        auth.signInWithPopup(provider)
+        .then(result => {
+            dispatch({
+                type: actionTypes.SET_USER,
+                user: result.user
+            });
+        }).catch(error => alert(error.message));
+   
+    }
     return (
         <div className="login">
             <Link to="/">
@@ -47,6 +61,14 @@ function Login() {
                 <Button onClick={signIn} className="loginBtn">Log In</Button>
             </form>
             <button onClick={register} className="login__register">Sign up for Twitter</button>
+            <div className="login__container">
+                <div className="login__text">
+                    <h2>Alternatively, </h2>
+                </div>
+                <Button className="loginBtn_2" type="submit" onClick={signIn2} >
+                    Sign in with Google
+                </Button>
+            </div>
             <footer className="footer__one">Disclaimer: This website was created for the purpose of testing the coder's web development capabilities. So no need to sue, honestly</footer>
             <footer className="footer__two">© Twitter Clone. No rights reserved - this is a demo</footer>
             <footer className="footer__three">Privacy · Terms · Sitemap · Details</footer>

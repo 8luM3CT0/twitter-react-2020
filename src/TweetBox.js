@@ -2,11 +2,13 @@ import React, {useState} from 'react'
 import './TweetBox.css'
 import { Avatar,Button} from '@material-ui/core'
 import db from './firebase'
+import { useStateValue } from './StateProvider';
 
 function TweetBox() {
 
     const [tweetMessage, setTweetMessage] = useState(' ');
     const [tweetImage, setTweetImage] = useState("");
+    const [{user}] = useStateValue();
 
     const sendTweet = e => {
         e.preventDefault();
